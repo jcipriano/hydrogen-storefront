@@ -1,0 +1,13 @@
+# example netlify.toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+## (optional) Settings for Netlify Dev
+## https://github.com/netlify/cli/blob/main/docs/netlify-dev.md#project-detection
+[dev]
+  command = "npm run dev" # Command to start your dev server
+  publish = "dist" # Folder with the static content for _redirect file
+  #  port = 3000 # Port that the dev server will be listening on
+
+## more info on configuring this file: https://docs.netlify.com/configure-builds/file-based-configuration/
